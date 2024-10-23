@@ -1,4 +1,7 @@
 # CSD 340 Web Development with HTML and CSS
 ## Contributors
-- John Woods
-- Julie Sakai
+<ul>
+  <li> John Woods</li>
+  <li> Julie Sakai</li>
+</ul>
+
