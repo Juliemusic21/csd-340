@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container {
+	text-align: center;
+	margin-top: 10%;
+}
+
+#image-gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+}
+
+#image-gallery div {
+	outline: 1px solid rgba(163, 0, 0, 0.904);
+}
+
+h1 {
+    text-align: center;
+    color: rgba(163, 0, 0, 0.904);
+}
+
+h3 {
+    text-align: center;
+    color: rgba(163, 0, 0, 0.904);
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(163, 0, 0, 0.904);
+}
+
+.bottom-div {
+	text-align: right;
+    margin-top: 60%;
+    margin-bottom: 20px;
+	width: 100%;
+	clear: both;
+	outline: none;
+}
+
+.bottom-div a {
+	float: right;
+	text-decoration: none;
+
+
+a:hover {
+    text-decoration: underline;
+}
+
