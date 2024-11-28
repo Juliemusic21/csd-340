@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--Julie Sakai Module 9.3 Assignment-->
+
+<html lang="en">
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="site.css">
+	<meta name="author"
+		content="Julie Sakai">
+	<meta name="keywords"
+		content="HTML, CSD-340, CSS">		
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<script>
+		var firstVariableValue = "childhood";
+		var secondVariableValue = "aspiration";
+		var thirdVariableValue = "journey";
+		var fourthVariableValue = "power";
+	</script>	
+</head>
+<body>
+	<header>
+		<h1>Assignment 9.3: JavaScript - Part 1</h1>
+	</header>
+	<div id="story">
+		<p>From the very beginning, my heart was set on one dreams which was working for The Walt Disney Company. 
+		My <span id="childhood">______</span> consisted of watching class Disney movies on VHS and visiting the Disney theme parks. 
+		Each trip to Disney was a portal to a world where magic was real, thanks to the incredible cast members who 
+		tirelessly crafted unforgettable experiences for every guest.</p>
+		<p>As I grew older, my admiration for these cast member transformed into fervent <span id="aspiration">______</span>. 
+		In high school, I discovered the Disney College Program which was going to be my golden opportunity that aligned perfectly with my dreams.
+		It was my chance to become part of the magic I had always cherished.
+		</p>
+		<p>In 2019, my dreams came true. I embarked on a magical <span id="journey">______</span>, working for The Walt Disney Company in Florida.
+		Each day is filled with moments of wonder and fulfillment, as I contribute to the magical experience that inspired me as a child.</p>
+		<p>The joy of seeing guests faces light up with delight reaffirms that dreams really do come true. 
+		Always chase your dreams because they have the <span id="power">______</span> to become your reality.</p>
+		<p>
+		<button type="button" onclick="document.getElementById('childhood').innerHTML = firstVariableValue">childhood</button><br />
+		<button type="button" onclick="document.getElementById('aspiration').innerHTML = secondVariableValue">aspiration</button><br />
+		<button type="button" onclick="document.getElementById('journey').innerHTML = thirdVariableValue">journey</button><br />
+		<button type="button" onclick="document.getElementById('power').innerHTML = fourthVariableValue">power</button><br />
+		</p>				
+</body>
+</html>
