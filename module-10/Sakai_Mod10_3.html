@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!--Julie Sakai Module 10.3 Assignment-->
+
+<html lang="en">
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="site.css">
+	<meta name="author"
+		content="Julie Sakai">
+	<meta name="keywords"
+		content="HTML, CSD-340, CSS">		
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Assignment 10.3: JavaScript - Part 2</h1>
+	<img id="fall" src="Example/fall.jpg" alt ="fall" style="width: 300px; height: auto;"
+	onmouseover="changeImage('fall', 'Example/winter.jpg')" onmouseout="resetImage('fall', 'Example/fall.jpg')">
+	<p>Run your mouse over the image to change fall to winter!</p>
+	
+	<img id="spring" src="Example/spring.jpg" alt ="spring" style="width: 300px; height: auto;"
+	onmouseover="changeImage('spring', 'Example/summer.jpg')" onmouseout="resetImage('spring', 'Example/spring.jpg')">
+	<p>Run your mouse over the image to change spring to summer!</p>
+
+	
+	<footer>
+		<p><a href="../index.html" style="float: right;">Back to Landing Page</a></p>
+	</footer>	
+	
+	<script>
+		function changeImage(imageId, newSrc) {
+			document.getElementById(imageId).src = newSrc;
+		}
+		
+		function restImage(imageId, originalSrc) {
+			document.getElementById(imageId).src = originalSrc;
+		} 	
+	</script>
+
+</body>
+</html>
