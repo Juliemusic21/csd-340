@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!--Julie Sakai Module 11.2 Assignment-->
+
+<html lang="en">
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<meta charset="UTF-8">
+	<meta name="description"
+		content="site.css">
+	<meta name="author"
+		content="Julie Sakai">
+	<meta name="keywords"
+		content="HTML, CSD-340, CSS">		
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Assignment 11.2: JavaScript - Part 3</h1>
+	<p>This is a user-created To Do List. Type in an item and click "Add" to add to the 
+	list, click "Delete Last Entry" to remove the last added entry, and click "Display"
+	when ready to view the list.
+	</p>
+	<form>
+		<input type="text" id="listentry" name="listenentry" placeholder="Enter text here">
+		<button type="button" onclick="addElement()">Add</button>
+		 <button type="button" onclick="deleteLastEntry()">Delete Last Entry</button>
+		<button type="button" onclick="displayElements()">Display</button>
+		<hr>
+	</form>	
+	<div id="displayArea"></div>
+	
+	<script>
+		let elementsArray = [];
+		
+		function addElement() {
+			let inputField = document.getElementById('listentry');
+			let newValue = inputField.value;
+			if(newValue.trim() !== "") {
+				elementsArray.push(newValue);
+				alert("Item: " + newValue + " Added at Index " + (elementsArray.length - 1));
+				inputField.value = "";
+			} else {
+				alert("Please enter a valid item.");
+			}
+		}	
+		
+		function deleteLastEntry() {
+			if (elementsArray.length > 0) {
+				let removedItem = elementsArray.pop();
+				alert("Deleted: " + removedItem);
+			} else {
+				alert("The list is already empty.");
+			}
+		}
+		
+		function displayElements() {
+			let displayArea = document.getElementById('displayArea');
+			displayArea.innerHTML = "";
+			if (elementsArray.length > 0) {
+				elementsArray.forEach(function(element, index) {
+					displayArea.innerHTML += "Item " + (index + 1) + ": " + element + "<br>";
+				});
+			} else {
+				displayArea.innerHTML = "Array is empty.";
+			}
+		}	
+	</script>	
+	
+	<footer>
+		<p><a href="../index.html" style="float: right;">Back to Landing Page</a></p>
+	</footer>	
+	
+</body>
+</html>
